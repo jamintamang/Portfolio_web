@@ -34,35 +34,35 @@ if (typingText) {
   typeWriter();
 }
 
-const projects = {
-  project1: {
-    image: "/src/assets/project/project-1.jpg",
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio website to showcase my skills and projects.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    GitHub: "https://github.com/username/portfolio",
-    live: "https://username.github.io/portfolio",
-  },
-  project2: {
-    title: "Weather App",
-    description:
-      "A weather application that provides real-time weather updates.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    image: "/src/assets/project/project-2.jpg",
-    GitHub: "https://github.com/username/weather-app",
-    live: "https://username.github.io/weather-app",
-  },
-  project3: {
-    title: "E-commerce Website",
-    description:
-      "An e-commerce platform with product listings and a shopping cart.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    image: "/src/assets/project/project-3.jpg",
-    GitHub: "https://github.com/username/ecommerce",
-    live: "https://username.github.io/ecommerce",
-  },
-};
+// const projects = {
+//   project1: {
+//     image: "/src/assets/project/project-1.jpg",
+//     title: "Portfolio Website",
+//     description:
+//       "A personal portfolio website to showcase my skills and projects.",
+//     technologies: ["HTML", "CSS", "JavaScript"],
+//     GitHub: "https://github.com/username/portfolio",
+//     live: "https://username.github.io/portfolio",
+//   },
+//   project2: {
+//     title: "Weather App",
+//     description:
+//       "A weather application that provides real-time weather updates.",
+//     technologies: ["HTML", "CSS", "JavaScript"],
+//     image: "/src/assets/project/project-2.jpg",
+//     GitHub: "https://github.com/username/weather-app",
+//     live: "https://username.github.io/weather-app",
+//   },
+//   project3: {
+//     title: "E-commerce Website",
+//     description:
+//       "An e-commerce platform with product listings and a shopping cart.",
+//     technologies: ["HTML", "CSS", "JavaScript"],
+//     image: "/src/assets/project/project-3.jpg",
+//     GitHub: "https://github.com/username/ecommerce",
+//     live: "https://username.github.io/ecommerce",
+//   },
+// };
 
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
@@ -89,35 +89,35 @@ if (hamburger && navLinks) {
   });
 }
 
-function createHomepageProjectCards() {
-  const projectGrid = document.querySelector(".project-grid");
+// function createHomepageProjectCards() {
+//   const projectGrid = document.querySelector(".project-grid");
   
-  if (!projectGrid) return;
+//   if (!projectGrid) return;
 
-  projectGrid.innerHTML = "";
+//   projectGrid.innerHTML = "";
 
-  const homepageProjects = Object.values(projects).slice(0, 3);
+//   const homepageProjects = Object.values(projects).slice(0, 3);
 
-  homepageProjects.forEach((project) => {
-    const projectCard = document.createElement("div");
-    projectCard.className = "project-card";
+//   homepageProjects.forEach((project) => {
+//     const projectCard = document.createElement("div");
+//     projectCard.className = "project-card";
 
-    projectCard.innerHTML = `
-      <img src="${project.image}" alt="${project.title}">
-      <div class="project-info">
-        <h5>${project.technologies ? project.technologies.join(", ") : ""}</h5>
-        <h3>${project.title}</h3>
-        <p>${project.description}</p>
-        <div class="project-links">
-          <a href="${project.GitHub}" target="_blank" class="btn"><i class="fa-brands fa-github"></i></a>
-          <a href="${project.live}" target="_blank" class="btn"><i class="fa-solid fa-link"></i></a>
-        </div>
-      </div>
-    `;
+//     projectCard.innerHTML = `
+//       <img src="${project.image}" alt="${project.title}">
+//       <div class="project-info">
+//         <h5>${project.technologies ? project.technologies.join(", ") : ""}</h5>
+//         <h3>${project.title}</h3>
+//         <p>${project.description}</p>
+//         <div class="project-links">
+//           <a href="${project.GitHub}" target="_blank" class="btn"><i class="fa-brands fa-github"></i></a>
+//           <a href="${project.live}" target="_blank" class="btn"><i class="fa-solid fa-link"></i></a>
+//         </div>
+//       </div>
+//     `;
 
-    projectGrid.appendChild(projectCard);
-  });
-}
+//     projectGrid.appendChild(projectCard);
+//   });
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   createHomepageProjectCards();

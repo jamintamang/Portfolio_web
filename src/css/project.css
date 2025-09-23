@@ -247,16 +247,23 @@ main {
 .project-link {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  color: #4361ee;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
 }
 
-.project-link:hover {
-  color: #3a0ca3;
+.project-links :hover {
+  background-color: #c75df0;
+  color: white;
+  /* transform: translateY(-2px); */
+  box-shadow: 0 4px 15px rgba(199, 93, 240, 0.3);
 }
 
 .filter-buttons {
