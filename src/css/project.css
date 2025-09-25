@@ -255,7 +255,7 @@ main {
 
 .tech-tag {
   background: #c75df0;
-  color: rgb(41, 41, 41);
+  color: white;
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -452,6 +452,10 @@ footer {
     transform: scale(1.05);
   }
 
+  .social-icons {
+    display: none;
+  }
+
   .hamburger {
     display: block;
   }
@@ -468,5 +472,19 @@ footer {
     align-items: center;
     padding-top: 40px;
     transition: left 0.5s ease;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-center {
+    margin: 1rem 0;
+  }
+
+  .footer-right {
+    justify-content: center;
   }
 }

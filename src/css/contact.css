@@ -343,21 +343,6 @@ footer {
     display: none;
   }
 
-  .hero-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-
-  .hero-text h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-img img {
-    width: 180px;
-    height: 180px;
-  }
-
   .footer-top {
     flex-direction: column;
     align-items: center;
@@ -374,18 +359,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  .projects h2,
-  .tech-stack h2 {
-    font-size: 2rem;
-  }
 
   .footer-bottom nav {
     flex-direction: column;

@@ -444,7 +444,12 @@ footer {
 
   .footer-top {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+  }
+
+  .footer-center {
+    margin: 1rem 0;
   }
 
   .footer-right {
